@@ -25,8 +25,17 @@ I am developing the project in my free time. If you like it you can support me b
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: General
-   :name: sec-general
+    :maxdepth: 1
+    :caption: General
+    :name: sec-general
 
-   general/installation
+    general/installation
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Attributes
+    :name: sec-attributes
+
+    attributes/drawer_attributes/index
+    attributes/meta_attributes/index
+    attributes/validator_attributes/index
