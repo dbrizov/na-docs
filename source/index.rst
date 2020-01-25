@@ -1,6 +1,6 @@
 NaughtyAttributes' Docs
 =======================
-NaughtyAttributes is an extension for the Unity Inspector.
+NaughtyAttributes is an open-source extension for the Unity Inspector.
 
 It expands the range of attributes that Unity provides so that you can create powerful inspectors without the need of custom editors or property drawers.
 It also provides attributes that can be applied to non-serialized fields or functions.
@@ -9,6 +9,19 @@ It also provides attributes that can be applied to non-serialized fields or func
     Most of the attributes are implemented using Unity's ``CustomPropertyDrawer``, so they will work in your custom editors.
     If you want all of the attributes to work in your custom editors, however,
     you must inherit from ``NaughtyInspector`` and use the ``NaughtyEditorGUI.PropertyField_Layout`` function instead of ``EditorGUILayout.PropertyField``.
+
+Contribute
+----------
+If you want to contribute you can visit the `GitHub Repo <https://github.com/dbrizov/NaughtyAttributes>`_ and give me pull requests.
+The project is using ``CRLF`` and ``Tabs`` instead of ``Spaces``. It's not must, but I'd really appreciate if you respect the coding standard.
+It's easier for me to merge your changes that way. You can also create issues as feature requests.
+
+Support
+-------
+I am developing the project in my free time. If you like it you can support me by donating.
+
+- `PayPal <https://paypal.me/dbrizov>`_
+- `Buy Me A Coffee <https://www.buymeacoffee.com/dbrizov>`_
 
 
 .. toctree::
