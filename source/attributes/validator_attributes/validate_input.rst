@@ -2,7 +2,7 @@ ValidateInput
 =============
 The most powerful ValidatorAttribute::
 
-    public class _NaughtyComponent : MonoBehaviour
+    public class NaughtyComponent : MonoBehaviour
     {
         [ValidateInput("IsNotNull")]
         public Transform myTransform;
