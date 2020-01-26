@@ -40,20 +40,5 @@ You can also have more than one condition::
     }
 
 .. note::
-    If you want to use it on serialized fields that are nested inside serialized structs or classes
-    you need to use the :ref:`label-allow-nesting` attribute::
-
-        public class EnableIfTest : MonoBehaviour
-        {
-            public EnableIfNest nest;
-        }
-
-        [System.Serializable]
-        public struct EnableIfNest
-        {
-            public bool enableFlag;
-
-            [EnableIf("enableFlag")]
-            [AllowNesting] // Because it's nested we need to explicitly allow nesting
-            public int integer;
-        }
+    If you want to use it on fields that are nested inside serialized structs or classes
+    you need to use the :ref:`label-allow-nesting` attribute.
