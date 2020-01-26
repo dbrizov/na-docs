@@ -13,7 +13,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'NaughtyAttributes'
-copyright = '2020, Denis Rizov'
+copyright = '2017, Denis Rizov'
 author = 'Denis Rizov'
 
 # The full version, including alpha/beta/rc tags
@@ -26,6 +26,9 @@ release = '2.0.1'
 extensions = [
     "sphinx_rtd_theme"
 ]
+
+# Code block
+highlight_language = "csharp"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

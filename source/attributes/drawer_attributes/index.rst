@@ -1,6 +1,10 @@
 Drawer Attributes
 =================
-Drawer attributes bla bla...
+Drawer attributes provide special draw options for the Unity Inspector.
+They can be applied to serialized, and non-serialized fields, native C# properties, and functions.
+
+.. note::
+    A field can have only one drawer attribute.
 
 .. toctree::
     :maxdepth: 1
