@@ -1,6 +1,6 @@
 Meta Attributes
 ===============
-Meta attributes bla bla...
+Give fields meta data. A field can have more than one meta attribute.
 
 .. toctree::
     :maxdepth: 1
