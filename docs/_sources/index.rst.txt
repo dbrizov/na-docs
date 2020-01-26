@@ -13,7 +13,7 @@ It also provides attributes that can be applied to non-serialized fields or func
 Contribute
 ----------
 If you want to contribute you can visit the `GitHub Repo <https://github.com/dbrizov/NaughtyAttributes>`_ and give me pull requests.
-The project is using ``CRLF`` and ``Tabs`` instead of ``Spaces``. It's not must, but I'd really appreciate if you respect the coding standard.
+The project is using ``CRLF`` and ``Tabs`` instead of ``Spaces``. It's not a must, but I'd really appreciate if you respect the coding standard.
 It's easier for me to merge your changes that way. You can also create issues as feature requests.
 
 Support
