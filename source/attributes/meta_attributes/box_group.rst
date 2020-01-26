@@ -1,6 +1,6 @@
 BoxGroup
 ========
-Can be used to group marked serialized fields inside a box::
+Can be used to group serialized fields::
 
     public class NaughtyComponent : MonoBehaviour
     {

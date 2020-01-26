@@ -1,7 +1,8 @@
 ShowNativeProperty
 ==================
 Shows native C# properties in the inspector.
-It supports only certain types **(bool, int, long, float, double, string, Vector2, Vector3, Vector4, Color, Bounds, Rect, UnityEngine.Object)**::
+It supports only certain types ``bool``, ``int``, ``long``, ``float``, ``double``, ``string``,
+``Vector2``, ``Vector3``, ``Vector4``, ``Color``, ``Bounds``, ``Rect``, ``UnityEngine.Object``::
 
     public class NaughtyComponent : MonoBehaviour
     {
