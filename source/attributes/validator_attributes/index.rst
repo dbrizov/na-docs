@@ -1,6 +1,8 @@
+.. _label-validator-attributes:
+
 Validator Attributes
 ====================
-Validator attributes bla bla...
+Used for validating fields. A field can have infinite number of validator attributes.
 
 .. toctree::
     :maxdepth: 1
