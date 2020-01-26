@@ -1,7 +1,7 @@
 Dropdown
 ========
 Provides an interface for dropdown value selection.
-The values of the dropdown can be provided by a **field**, **property** or **function**::
+The values of the dropdown can be provided by a ``field``, ``property`` or ``function``::
 
     public class NaughtyComponent : MonoBehaviour
     {
