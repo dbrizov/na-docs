@@ -1,3 +1,5 @@
+.. _label-min-max-slider:
+
 MinMaxSlider
 ============
 A double slider. The **min value** is saved to the **X** property, and the **max value** is saved to the **Y** property of a **Vector2** field::

@@ -1,3 +1,5 @@
+.. _label-meta-attributes:
+
 Meta Attributes
 ===============
 Give fields meta data. A field can have more than one meta attribute.
