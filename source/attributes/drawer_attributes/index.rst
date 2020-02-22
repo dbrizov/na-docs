@@ -17,6 +17,7 @@ They can be applied to serialized, and non-serialized fields, native C# properti
     enum_flags
     horizontal_line
     info_box
+    input_axis
     min_max_slider
     progress_bar
     read_only
