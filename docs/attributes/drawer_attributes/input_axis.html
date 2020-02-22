@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ResizableTextArea &mdash; NaughtyAttributes 2.0.2 documentation</title>
+  <title>InputAxis &mdash; NaughtyAttributes 2.0.2 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Scene" href="scene.html" />
-    <link rel="prev" title="ReorderableList" href="reorderable_list.html" /> 
+    <link rel="next" title="MinMaxSlider" href="min_max_slider.html" />
+    <link rel="prev" title="InfoBox" href="info_box.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,12 +92,12 @@
 <li class="toctree-l2"><a class="reference internal" href="enum_flags.html">EnumFlags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="info_box.html">InfoBox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="input_axis.html">InputAxis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">InputAxis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="min_max_slider.html">MinMaxSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="progress_bar.html">ProgressBar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reorderable_list.html">ReorderableList</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ResizableTextArea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resizable_text_area.html">ResizableTextArea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene.html">Scene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="show_asset_preview.html">ShowAssetPreview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="show_native_property.html">ShowNativeProperty</a></li>
@@ -170,13 +170,13 @@
         
           <li><a href="index.html">Drawer Attributes</a> &raquo;</li>
         
-      <li>ResizableTextArea</li>
+      <li>InputAxis</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/attributes/drawer_attributes/resizable_text_area.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/attributes/drawer_attributes/input_axis.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -189,19 +189,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="resizabletextarea">
-<h1>ResizableTextArea<a class="headerlink" href="#resizabletextarea" title="Permalink to this headline">¶</a></h1>
-<p>A resizable text area where you can see the whole text.
-Unlike Unity’s <code class="docutils literal notranslate"><span class="pre">Multiline</span></code> and <code class="docutils literal notranslate"><span class="pre">TextArea</span></code> attributes where you can see only 3 rows of a given text,
-and in order to see it or modify it you have to manually scroll down to the desired row:</p>
+  <div class="section" id="inputaxis">
+<h1>InputAxis<a class="headerlink" href="#inputaxis" title="Permalink to this headline">¶</a></h1>
+<p>Select an input axis via dropdown interface:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-<span class="na">    [ResizableTextArea]</span>
-    <span class="k">public</span> <span class="kt">string</span> <span class="n">resizableTextArea</span><span class="p">;</span>
+<span class="na">    [InputAxis]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">inputAxis</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<img alt="../../_images/ResizableTextArea_Inspector.gif" src="../../_images/ResizableTextArea_Inspector.gif" />
+<img alt="../../_images/InputAxis_Inspector.png" src="../../_images/InputAxis_Inspector.png" />
 </div>
 
 
@@ -212,10 +210,10 @@ and in order to see it or modify it you have to manually scroll down to the desi
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="scene.html" class="btn btn-neutral float-right" title="Scene" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="min_max_slider.html" class="btn btn-neutral float-right" title="MinMaxSlider" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="reorderable_list.html" class="btn btn-neutral float-left" title="ReorderableList" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="info_box.html" class="btn btn-neutral float-left" title="InfoBox" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

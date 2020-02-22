@@ -1,6 +1,6 @@
 Tag
 ===
-Enable Tag selection via dropdown interface::
+Select a tag via dropdown interface::
 
     public class NaughtyComponent : MonoBehaviour
     {
