@@ -2,7 +2,7 @@
 
 EnableIf / DisableIf
 ====================
-Can be used to make serialized fields ``readonly`` based on some condition.
+Can be used to make serialized fields or buttons ``readonly`` based on some condition.
 The condition can be a ``field``, ``property`` or ``function``::
 
     public class NaughtyComponent : MonoBehaviour

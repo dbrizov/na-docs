@@ -6,10 +6,19 @@ Works both with instance and static methods::
     public class NaughtyComponent : MonoBehaviour
     {
         [Button]
-        private void MethodOne() { }
+        private void MethodOne(int parameter = 0) { } // Works with default parameters
 
-        [Button("Button Text")]
+        [Button("Button Text")] // Specify button text
         private void MethodTwo() { }
+
+        [Button(enabledMode: EButtonEnableMode.Editor)]
+        private void EnabledInEditorOnly() { }
+
+        [Button(enabledMode: EButtonEnableMode.Playmode)]
+        private void EnabledInPlaymodeOnly() { }
+
+        [Button] // When pressed and the target object is a MonoBehaviour, it will start the coroutine
+        private IEnumerator SomeCoroutine() { }
     }
 
 .. image:: ../../images/Button_Inspector.png

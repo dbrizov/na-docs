@@ -13,6 +13,7 @@ They can be applied to serialized, and non-serialized fields, native C# properti
     :name: toc-drawer-attributes
 
     button
+    curve_range
     dropdown
     enum_flags
     horizontal_line

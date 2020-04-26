@@ -1,6 +1,6 @@
 ShowIf / HideIf
 ===============
-Can be used to show/hide serialized fields based on some condition.
+Can be used to show/hide serialized fields or buttons based on some condition.
 The condition can be a ``field``, ``property`` or ``function``::
 
     public class NaughtyComponent : MonoBehaviour

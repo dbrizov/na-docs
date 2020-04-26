@@ -9,9 +9,9 @@ If you want a runtime event, you should probably use an event/delegate and subsc
         [OnValueChanged("OnValueChangedCallback")]
         public int myInt;
 
-        private void OnValueChangedCallback(int oldValue, int newValue)
+        private void OnValueChangedCallback()
         {
-            Debug.Log(myInt == newValue); // prints true
+            Debug.Log(myInt);
         }
     }
 
