@@ -2,7 +2,7 @@
 
 Meta Attributes
 ===============
-Give fields meta data. A field can have more than one meta attribute.
+Give fields or methods meta data. A field or method can have more than one meta attribute.
 
 .. toctree::
     :maxdepth: 1

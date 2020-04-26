@@ -88,6 +88,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../drawer_attributes/index.html">Drawer Attributes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/button.html">Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/curve_range.html">CurveRange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/dropdown.html">Dropdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/enum_flags.html">EnumFlags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/horizontal_line.html">HorizontalLine</a></li>
@@ -191,8 +192,13 @@
             
   <div class="section" id="showif-hideif">
 <h1>ShowIf / HideIf<a class="headerlink" href="#showif-hideif" title="Permalink to this headline">¶</a></h1>
-<p>Can be used to show/hide serialized fields based on some condition.
-The condition can be a <code class="docutils literal notranslate"><span class="pre">field</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code> or <code class="docutils literal notranslate"><span class="pre">function</span></code>:</p>
+<p>Can be used to show/hide serialized fields or buttons based on some condition.
+The condition can be a <code class="docutils literal notranslate"><span class="pre">field</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code> or <code class="docutils literal notranslate"><span class="pre">function</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to use it on fields that are nested inside serialized structs or classes
+you need to use the <a class="reference internal" href="../special_attributes/allow_nesting.html#label-allow-nesting"><span class="std std-ref">AllowNesting</span></a> attribute.</p>
+</div>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
     <span class="k">public</span> <span class="kt">bool</span> <span class="n">showInt</span><span class="p">;</span>
@@ -226,11 +232,6 @@ The condition can be a <code class="docutils literal notranslate"><span class="p
     <span class="k">public</span> <span class="kt">int</span> <span class="n">showIfAny</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you want to use it on fields that are nested inside serialized structs or classes
-you need to use the <a class="reference internal" href="../special_attributes/allow_nesting.html#label-allow-nesting"><span class="std std-ref">AllowNesting</span></a> attribute.</p>
 </div>
 </div>
 

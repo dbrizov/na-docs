@@ -1,7 +1,17 @@
 Dropdown
 ========
 Provides an interface for dropdown value selection.
-The values of the dropdown can be provided by a ``field``, ``property`` or ``function``::
+The values of the dropdown can be provided by a ``field``, ``property`` or ``function``.
+
+.. warning::
+    When nested inside a **struct** the value of the dropdown doesn't update.
+    This is because the value of the parent struct is updated via reflection.
+    In order for the value to be updated the struct needs to be **boxed** and then **unboxed**.
+    The sctruct is already passed as an object (boxed) to the dropdown drawer, but unfortunately in order
+    to unbox it I need to know the compile-time type of the struct, and I don't.
+    Nesting inside a **class** works as expected.
+
+::
 
     public class NaughtyComponent : MonoBehaviour
     {
@@ -33,11 +43,3 @@ The values of the dropdown can be provided by a ``field``, ``property`` or ``fun
     }
 
 .. image:: ../../images/Dropdown_Inspector.gif
-
-.. warning::
-    When nested inside a **struct** the value of the dropdown doesn't update.
-    This is because the value of the parent struct is updated via reflection.
-    In order for the value to be updated the struct needs to be **boxed** and then **unboxed**.
-    The sctruct is already passed as an object (boxed) to the dropdown drawer, but unfortunately in order
-    to unbox it I need to know the compile-time type of the struct, and I don't.
-    Nesting inside a **class** works as expected.

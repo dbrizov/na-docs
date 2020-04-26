@@ -3,7 +3,13 @@
 EnableIf / DisableIf
 ====================
 Can be used to make serialized fields or buttons ``readonly`` based on some condition.
-The condition can be a ``field``, ``property`` or ``function``::
+The condition can be a ``field``, ``property`` or ``function``.
+
+.. note::
+    If you want to use it on fields that are nested inside serialized structs or classes
+    you need to use the :ref:`label-allow-nesting` attribute.
+
+::
 
     public class NaughtyComponent : MonoBehaviour
     {
@@ -38,7 +44,3 @@ You can also have more than one condition::
         [EnableIf(EConditionOperator.Or, "flag0", "flag1")]
         public int enabledIfAny;
     }
-
-.. note::
-    If you want to use it on fields that are nested inside serialized structs or classes
-    you need to use the :ref:`label-allow-nesting` attribute.

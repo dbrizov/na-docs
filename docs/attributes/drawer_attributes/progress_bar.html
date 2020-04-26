@@ -88,6 +88,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Drawer Attributes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="button.html">Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curve_range.html">CurveRange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dropdown.html">Dropdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="enum_flags.html">EnumFlags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
@@ -200,8 +201,10 @@
 <span class="na">    [ProgressBar(&quot;Mana&quot;, 100, EColor.Blue)]</span>
     <span class="k">public</span> <span class="kt">int</span> <span class="n">mana</span> <span class="p">=</span> <span class="m">25</span><span class="p">;</span>
 
-<span class="na">    [ProgressBar(&quot;Stamina&quot;, 200, EColor.Green)]</span>
+<span class="na">    [ProgressBar(&quot;Stamina&quot;, &quot;maxStamina&quot;, EColor.Green)]</span> <span class="c1">// Dynamic max value constructor</span>
     <span class="k">public</span> <span class="kt">int</span> <span class="n">stamina</span> <span class="p">=</span> <span class="m">150</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">maxStamina</span> <span class="p">=</span> <span class="m">200</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>

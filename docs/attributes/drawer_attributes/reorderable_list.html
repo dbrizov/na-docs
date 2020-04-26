@@ -88,6 +88,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Drawer Attributes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="button.html">Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curve_range.html">CurveRange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dropdown.html">Dropdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="enum_flags.html">EnumFlags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
@@ -191,7 +192,11 @@
             
   <div class="section" id="reorderablelist">
 <h1>ReorderableList<a class="headerlink" href="#reorderablelist" title="Permalink to this headline">¶</a></h1>
-<p>Provides array type fields with an interface for easy reordering of elements:</p>
+<p>Provides array type fields with an interface for easy reordering of elements.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Doesn’t work on lists that are nested inside serialized structs of classes.</p>
+</div>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
 <span class="na">    [ReorderableList]</span>
@@ -203,10 +208,6 @@
 </pre></div>
 </div>
 <img alt="../../_images/ReorderableList_Inspector.gif" src="../../_images/ReorderableList_Inspector.gif" />
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Doesn’t work on lists that are nested inside serialized structs of classes.</p>
-</div>
 </div>
 
 

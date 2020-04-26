@@ -88,6 +88,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../drawer_attributes/index.html">Drawer Attributes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/button.html">Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/curve_range.html">CurveRange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/dropdown.html">Dropdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/enum_flags.html">EnumFlags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/horizontal_line.html">HorizontalLine</a></li>
@@ -193,23 +194,23 @@
 <h1>OnValueChanged<a class="headerlink" href="#onvaluechanged" title="Permalink to this headline">¶</a></h1>
 <p>Detects a value change and executes a callback.
 Keep in mind that the event is detected only when the value is changed from the inspector.
-If you want a runtime event, you should probably use an event/delegate and subscribe to it:</p>
+If you want a runtime event, you should probably use an event/delegate and subscribe to it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to use it on fields that are nested inside serialized structs or classes
+you need to use the <a class="reference internal" href="../special_attributes/allow_nesting.html#label-allow-nesting"><span class="std std-ref">AllowNesting</span></a> attribute.</p>
+</div>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
 <span class="na">    [OnValueChanged(&quot;OnValueChangedCallback&quot;)]</span>
     <span class="k">public</span> <span class="kt">int</span> <span class="n">myInt</span><span class="p">;</span>
 
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnValueChangedCallback</span><span class="p">(</span><span class="kt">int</span> <span class="n">oldValue</span><span class="p">,</span> <span class="kt">int</span> <span class="n">newValue</span><span class="p">)</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnValueChangedCallback</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">myInt</span> <span class="p">==</span> <span class="n">newValue</span><span class="p">);</span> <span class="c1">// prints true</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">myInt</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you want to use it on fields that are nested inside serialized structs or classes
-you need to use the <a class="reference internal" href="../special_attributes/allow_nesting.html#label-allow-nesting"><span class="std std-ref">AllowNesting</span></a> attribute.</p>
 </div>
 </div>
 

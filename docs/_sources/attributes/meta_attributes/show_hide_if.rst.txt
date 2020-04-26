@@ -1,7 +1,13 @@
 ShowIf / HideIf
 ===============
-Can be used to show/hide serialized fields based on some condition.
-The condition can be a ``field``, ``property`` or ``function``::
+Can be used to show/hide serialized fields or buttons based on some condition.
+The condition can be a ``field``, ``property`` or ``function``.
+
+.. note::
+    If you want to use it on fields that are nested inside serialized structs or classes
+    you need to use the :ref:`label-allow-nesting` attribute.
+
+::
 
     public class NaughtyComponent : MonoBehaviour
     {
@@ -36,7 +42,3 @@ You can have more than one condition::
         [ShowIf(EConditionOperator.Or, "flag0", "flag1")]
         public int showIfAny;
     }
-
-.. note::
-    If you want to use it on fields that are nested inside serialized structs or classes
-    you need to use the :ref:`label-allow-nesting` attribute.

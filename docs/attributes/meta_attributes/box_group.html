@@ -88,6 +88,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../drawer_attributes/index.html">Drawer Attributes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/button.html">Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/curve_range.html">CurveRange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/dropdown.html">Dropdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/enum_flags.html">EnumFlags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/horizontal_line.html">HorizontalLine</a></li>
@@ -191,7 +192,11 @@
             
   <div class="section" id="boxgroup">
 <h1>BoxGroup<a class="headerlink" href="#boxgroup" title="Permalink to this headline">¶</a></h1>
-<p>Can be used to group serialized fields:</p>
+<p>Can be used to group serialized fields.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Doesn’t work on serialized fields that are nested inside serialized structs of classes.</p>
+</div>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
 <span class="na">    [BoxGroup(&quot;Integers&quot;)]</span>
@@ -207,14 +212,6 @@
 </pre></div>
 </div>
 <img alt="../../_images/BoxGroup_Inspector.png" src="../../_images/BoxGroup_Inspector.png" />
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Works only on serialized fields.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Doesn’t work on serialized fields that are nested inside serialized structs of classes.</p>
-</div>
 </div>
 
 

@@ -1,7 +1,12 @@
 Button
 ======
 A method can be marked as a button. A button appears in the inspector and executes the method if clicked.
-Works both with instance and static methods::
+Works both with instance and static methods.
+
+.. warning::
+    Doesn't work on methods that are nested inside serialized structs of classes.
+
+::
 
     public class NaughtyComponent : MonoBehaviour
     {
@@ -22,6 +27,3 @@ Works both with instance and static methods::
     }
 
 .. image:: ../../images/Button_Inspector.png
-
-.. warning::
-    Doesn't work on methods that are nested inside serialized structs of classes.

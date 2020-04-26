@@ -1,6 +1,12 @@
 ValidateInput
 =============
-The most powerful ValidatorAttribute::
+The most powerful ValidatorAttribute.
+
+.. note::
+    If you want to use it on fields that are nested inside serialized structs or classes
+    you need to use the :ref:`label-allow-nesting` attribute.
+
+::
 
     public class NaughtyComponent : MonoBehaviour
     {
@@ -22,7 +28,3 @@ The most powerful ValidatorAttribute::
     }
 
 .. image:: ../../images/ValidateInput_Inspector.png
-
-.. note::
-    If you want to use it on fields that are nested inside serialized structs or classes
-    you need to use the :ref:`label-allow-nesting` attribute.

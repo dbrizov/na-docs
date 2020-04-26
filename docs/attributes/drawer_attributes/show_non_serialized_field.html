@@ -88,6 +88,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Drawer Attributes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="button.html">Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curve_range.html">CurveRange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dropdown.html">Dropdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="enum_flags.html">EnumFlags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
@@ -195,7 +196,11 @@
 Keep in mind that if you change a non-static non-serialized field in the code - the value in the inspector will be updated after you press <strong>Play</strong> in the editor.
 There is no such issue with static non-serialized fields because their values are updated at compile-time.
 It supports only certain types <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">long</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Vector2</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector3</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector4</span></code>, <code class="docutils literal notranslate"><span class="pre">Color</span></code>, <code class="docutils literal notranslate"><span class="pre">Bounds</span></code>, <code class="docutils literal notranslate"><span class="pre">Rect</span></code>, <code class="docutils literal notranslate"><span class="pre">UnityEngine.Object</span></code>:</p>
+<code class="docutils literal notranslate"><span class="pre">Vector2</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector3</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector4</span></code>, <code class="docutils literal notranslate"><span class="pre">Color</span></code>, <code class="docutils literal notranslate"><span class="pre">Bounds</span></code>, <code class="docutils literal notranslate"><span class="pre">Rect</span></code>, <code class="docutils literal notranslate"><span class="pre">UnityEngine.Object</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Doesn’t work on non-serialized fields that are nested inside serialized structs of classes.</p>
+</div>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
 <span class="na">    [ShowNonSerializedField]</span>
@@ -210,10 +215,6 @@ It supports only certain types <code class="docutils literal notranslate"><span 
 </pre></div>
 </div>
 <img alt="../../_images/ShowNonSerializedField_Inspector.png" src="../../_images/ShowNonSerializedField_Inspector.png" />
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Doesn’t work on non-serialized fields that are nested inside serialized structs of classes.</p>
-</div>
 </div>
 
 

@@ -1,6 +1,12 @@
 Label
 =====
-Override default field label::
+Override default field label.
+
+.. note::
+    If you want to use it on fields that are nested inside serialized structs or classes
+    you need to use the :ref:`label-allow-nesting` attribute.
+
+::
 
     public class NaughtyComponent : MonoBehaviour
     {
@@ -12,7 +18,3 @@ Override default field label::
     }
 
 .. image:: ../../images/Label_Inspector.png
-
-.. note::
-    If you want to use it on fields that are nested inside serialized structs or classes
-    you need to use the :ref:`label-allow-nesting` attribute.

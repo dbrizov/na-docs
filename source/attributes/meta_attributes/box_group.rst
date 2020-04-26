@@ -1,6 +1,11 @@
 BoxGroup
 ========
-Can be used to group serialized fields::
+Can be used to group serialized fields.
+
+.. warning::
+    Doesn't work on serialized fields that are nested inside serialized structs of classes.
+
+::
 
     public class NaughtyComponent : MonoBehaviour
     {
@@ -16,9 +21,3 @@ Can be used to group serialized fields::
     }
 
 .. image:: ../../images/BoxGroup_Inspector.png
-
-.. note::
-    Works only on serialized fields.
-
-.. warning::
-    Doesn't work on serialized fields that are nested inside serialized structs of classes.

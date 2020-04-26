@@ -36,7 +36,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="EnumFlags" href="enum_flags.html" />
-    <link rel="prev" title="Button" href="button.html" /> 
+    <link rel="prev" title="CurveRange" href="curve_range.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,6 +88,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Drawer Attributes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="button.html">Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curve_range.html">CurveRange</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Dropdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="enum_flags.html">EnumFlags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
@@ -192,7 +193,16 @@
   <div class="section" id="dropdown">
 <h1>Dropdown<a class="headerlink" href="#dropdown" title="Permalink to this headline">¶</a></h1>
 <p>Provides an interface for dropdown value selection.
-The values of the dropdown can be provided by a <code class="docutils literal notranslate"><span class="pre">field</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code> or <code class="docutils literal notranslate"><span class="pre">function</span></code>:</p>
+The values of the dropdown can be provided by a <code class="docutils literal notranslate"><span class="pre">field</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code> or <code class="docutils literal notranslate"><span class="pre">function</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When nested inside a <strong>struct</strong> the value of the dropdown doesn’t update.
+This is because the value of the parent struct is updated via reflection.
+In order for the value to be updated the struct needs to be <strong>boxed</strong> and then <strong>unboxed</strong>.
+The sctruct is already passed as an object (boxed) to the dropdown drawer, but unfortunately in order
+to unbox it I need to know the compile-time type of the struct, and I don’t.
+Nesting inside a <strong>class</strong> works as expected.</p>
+</div>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
 <span class="na">    [Dropdown(&quot;intValues&quot;)]</span>
@@ -224,15 +234,6 @@ The values of the dropdown can be provided by a <code class="docutils literal no
 </pre></div>
 </div>
 <img alt="../../_images/Dropdown_Inspector.gif" src="../../_images/Dropdown_Inspector.gif" />
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>When nested inside a <strong>struct</strong> the value of the dropdown doesn’t update.
-This is because the value of the parent struct is updated via reflection.
-In order for the value to be updated the struct needs to be <strong>boxed</strong> and then <strong>unboxed</strong>.
-The sctruct is already passed as an object (boxed) to the dropdown drawer, but unfortunately in order
-to unbox it I need to know the compile-time type of the struct, and I don’t.
-Nesting inside a <strong>class</strong> works as expected.</p>
-</div>
 </div>
 
 
@@ -246,7 +247,7 @@ Nesting inside a <strong>class</strong> works as expected.</p>
         <a href="enum_flags.html" class="btn btn-neutral float-right" title="EnumFlags" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="button.html" class="btn btn-neutral float-left" title="Button" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="curve_range.html" class="btn btn-neutral float-left" title="CurveRange" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
