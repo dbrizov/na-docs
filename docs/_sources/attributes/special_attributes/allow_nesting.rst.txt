@@ -24,7 +24,7 @@ If you want to use :ref:`label-enable-disable-if` attributes inside structs for 
 
 .. note::
     The ``AllowNesting`` attribute is actually a drawer attribute. You can think of it as a ``DefaultDrawer`` attribute.
-    All it does is draw the serialized field with it's default drawer. This is a bit of a hack you see.
+    All it does is draw the serialized field with its default drawer. This is a bit of a hack you see.
     The system is implemented in such a way that before a drawer's ``OnGUI`` function is called it applies the **meta** and **validator** attributes.
     In order to trigger this behavoir we need some kind of a drawer. The ``AllowNesting`` is that drawer.
     If for you are combining :ref:`label-enable-disable-if` with :ref:`label-min-max-slider` for instance,

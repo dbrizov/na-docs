@@ -213,7 +213,7 @@ If you want to use <a class="reference internal" href="../meta_attributes/enable
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">AllowNesting</span></code> attribute is actually a drawer attribute. You can think of it as a <code class="docutils literal notranslate"><span class="pre">DefaultDrawer</span></code> attribute.
-All it does is draw the serialized field with it’s default drawer. This is a bit of a hack you see.
+All it does is draw the serialized field with its default drawer. This is a bit of a hack you see.
 The system is implemented in such a way that before a drawer’s <code class="docutils literal notranslate"><span class="pre">OnGUI</span></code> function is called it applies the <strong>meta</strong> and <strong>validator</strong> attributes.
 In order to trigger this behavoir we need some kind of a drawer. The <code class="docutils literal notranslate"><span class="pre">AllowNesting</span></code> is that drawer.
 If for you are combining <a class="reference internal" href="../meta_attributes/enable_disable_if.html#label-enable-disable-if"><span class="std std-ref">EnableIf / DisableIf</span></a> with <a class="reference internal" href="../drawer_attributes/min_max_slider.html#label-min-max-slider"><span class="std std-ref">MinMaxSlider</span></a> for instance,
