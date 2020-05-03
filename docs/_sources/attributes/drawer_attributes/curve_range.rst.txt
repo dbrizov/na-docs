@@ -1,6 +1,6 @@
 CurveRange
 ==========
-Can limit the ``x`` and ``y`` values of an animation curve, and/or changed the color of the curve in the inspector::
+Can limit the ``x`` and ``y`` values of an animation curve, and/or change the color of the curve in the inspector::
 
     public class NaughtyComponent : MonoBehaviour
     {
