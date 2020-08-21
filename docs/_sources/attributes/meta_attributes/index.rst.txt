@@ -10,6 +10,7 @@ Give fields or methods meta data. A field or method can have more than one meta 
 
     box_group
     enable_disable_if
+    foldout
     label
     on_value_changed
     show_hide_if

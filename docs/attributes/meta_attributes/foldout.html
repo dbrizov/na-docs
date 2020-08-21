@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Meta Attributes &mdash; NaughtyAttributes 2.0.5 documentation</title>
+  <title>Foldout &mdash; NaughtyAttributes 2.0.5 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="BoxGroup" href="box_group.html" />
-    <link rel="prev" title="Tag" href="../drawer_attributes/tag.html" /> 
+    <link rel="next" title="Label" href="label.html" />
+    <link rel="prev" title="EnableIf / DisableIf" href="enable_disable_if.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -108,10 +108,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/tag.html">Tag</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Meta Attributes</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Meta Attributes</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="box_group.html">BoxGroup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="enable_disable_if.html">EnableIf / DisableIf</a></li>
-<li class="toctree-l2"><a class="reference internal" href="foldout.html">Foldout</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Foldout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="label.html">Label</a></li>
 <li class="toctree-l2"><a class="reference internal" href="on_value_changed.html">OnValueChanged</a></li>
 <li class="toctree-l2"><a class="reference internal" href="show_hide_if.html">ShowIf / HideIf</a></li>
@@ -172,13 +172,15 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Meta Attributes</li>
+          <li><a href="index.html">Meta Attributes</a> &raquo;</li>
+        
+      <li>Foldout</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/attributes/meta_attributes/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/attributes/meta_attributes/foldout.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -191,19 +193,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="meta-attributes">
-<span id="label-meta-attributes"></span><h1>Meta Attributes<a class="headerlink" href="#meta-attributes" title="Permalink to this headline">¶</a></h1>
-<p>Give fields or methods meta data. A field or method can have more than one meta attribute.</p>
-<div class="toctree-wrapper compound" id="toc-meta-attributes">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="box_group.html">BoxGroup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enable_disable_if.html">EnableIf / DisableIf</a></li>
-<li class="toctree-l1"><a class="reference internal" href="foldout.html">Foldout</a></li>
-<li class="toctree-l1"><a class="reference internal" href="label.html">Label</a></li>
-<li class="toctree-l1"><a class="reference internal" href="on_value_changed.html">OnValueChanged</a></li>
-<li class="toctree-l1"><a class="reference internal" href="show_hide_if.html">ShowIf / HideIf</a></li>
-</ul>
+  <div class="section" id="foldout">
+<h1>Foldout<a class="headerlink" href="#foldout" title="Permalink to this headline">¶</a></h1>
+<p>Makes a foldout group.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Doesn’t work on serialized fields that are nested inside serialized structs of classes.</p>
 </div>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+<span class="na">    [Foldout(&quot;Integers&quot;)]</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">firstInt</span><span class="p">;</span>
+<span class="na">    [Foldout(&quot;Integers&quot;)]</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">secondInt</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<img alt="../../_images/Foldout_Inspector.gif" src="../../_images/Foldout_Inspector.gif" />
 </div>
 
 
@@ -214,10 +220,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="box_group.html" class="btn btn-neutral float-right" title="BoxGroup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="label.html" class="btn btn-neutral float-right" title="Label" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../drawer_attributes/tag.html" class="btn btn-neutral float-left" title="Tag" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="enable_disable_if.html" class="btn btn-neutral float-left" title="EnableIf / DisableIf" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

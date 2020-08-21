@@ -12,10 +12,12 @@ They can be applied to serialized, and non-serialized fields, native C# properti
     :maxdepth: 1
     :name: toc-drawer-attributes
 
+    animator_param
     button
     curve_range
     dropdown
     enum_flags
+    expandable
     horizontal_line
     info_box
     input_axis

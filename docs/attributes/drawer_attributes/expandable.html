@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ShowNativeProperty &mdash; NaughtyAttributes 2.0.5 documentation</title>
+  <title>Expandable &mdash; NaughtyAttributes 2.0.5 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ShowNonSerializedField" href="show_non_serialized_field.html" />
-    <link rel="prev" title="ShowAssetPreview" href="show_asset_preview.html" /> 
+    <link rel="next" title="HorizontalLine" href="horizontal_line.html" />
+    <link rel="prev" title="EnumFlags" href="enum_flags.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,7 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="curve_range.html">CurveRange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dropdown.html">Dropdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="enum_flags.html">EnumFlags</a></li>
-<li class="toctree-l2"><a class="reference internal" href="expandable.html">Expandable</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Expandable</a></li>
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="info_box.html">InfoBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="input_axis.html">InputAxis</a></li>
@@ -103,7 +103,7 @@
 <li class="toctree-l2"><a class="reference internal" href="resizable_text_area.html">ResizableTextArea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene.html">Scene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="show_asset_preview.html">ShowAssetPreview</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ShowNativeProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="show_native_property.html">ShowNativeProperty</a></li>
 <li class="toctree-l2"><a class="reference internal" href="show_non_serialized_field.html">ShowNonSerializedField</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tag.html">Tag</a></li>
 </ul>
@@ -174,13 +174,13 @@
         
           <li><a href="index.html">Drawer Attributes</a> &raquo;</li>
         
-      <li>ShowNativeProperty</li>
+      <li>Expandable</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/attributes/drawer_attributes/show_native_property.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/attributes/drawer_attributes/expandable.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -193,25 +193,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="shownativeproperty">
-<h1>ShowNativeProperty<a class="headerlink" href="#shownativeproperty" title="Permalink to this headline">¶</a></h1>
-<p>Shows native C# properties in the inspector.
-It supports only certain types <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">long</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Vector2</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector3</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector4</span></code>, <code class="docutils literal notranslate"><span class="pre">Color</span></code>, <code class="docutils literal notranslate"><span class="pre">Bounds</span></code>, <code class="docutils literal notranslate"><span class="pre">Rect</span></code>, <code class="docutils literal notranslate"><span class="pre">UnityEngine.Object</span></code>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Doesn’t work on properties that are nested inside serialized structs of classes.</p>
-</div>
+  <div class="section" id="expandable">
+<h1>Expandable<a class="headerlink" href="#expandable" title="Permalink to this headline">¶</a></h1>
+<p>Make scriptable objects expandable:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Transform</span><span class="p">&gt;</span> <span class="n">transforms</span><span class="p">;</span>
-
-<span class="na">    [ShowNativeProperty]</span>
-    <span class="k">public</span> <span class="kt">int</span> <span class="n">TransformsCount</span> <span class="p">=&gt;</span> <span class="n">transforms</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
+<span class="na">    [Expandable]</span>
+    <span class="k">public</span> <span class="n">ScriptableObject</span> <span class="n">scriptableObject</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<img alt="../../_images/ShowNativeProperty_Inspector.png" src="../../_images/ShowNativeProperty_Inspector.png" />
+<img alt="../../_images/Expandable_Inspector.png" src="../../_images/Expandable_Inspector.png" />
 </div>
 
 
@@ -222,10 +214,10 @@ It supports only certain types <code class="docutils literal notranslate"><span 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="show_non_serialized_field.html" class="btn btn-neutral float-right" title="ShowNonSerializedField" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="horizontal_line.html" class="btn btn-neutral float-right" title="HorizontalLine" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="show_asset_preview.html" class="btn btn-neutral float-left" title="ShowAssetPreview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="enum_flags.html" class="btn btn-neutral float-left" title="EnumFlags" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
