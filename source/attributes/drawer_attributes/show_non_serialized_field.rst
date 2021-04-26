@@ -1,3 +1,5 @@
+.. _label-show-non-serialized-field:
+
 ShowNonSerializedField
 ======================
 Shows non-serialized fields in the inspector.

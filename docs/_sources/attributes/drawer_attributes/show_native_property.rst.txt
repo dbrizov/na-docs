@@ -1,3 +1,5 @@
+.. _label-show-native-property:
+
 ShowNativeProperty
 ==================
 Shows native C# properties in the inspector.

@@ -1,3 +1,5 @@
+.. _label-reorderable-list:
+
 ReorderableList
 ===============
 Provides array type fields with an interface for easy reordering of elements.

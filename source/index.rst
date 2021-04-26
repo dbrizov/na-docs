@@ -7,6 +7,8 @@ It also provides attributes that can be applied to non-serialized fields or func
 
 .. note::
     Most of the attributes are implemented using Unity's ``CustomPropertyDrawer``, so they will work in your custom editors.
+    The attributes that won't work in your custom editors are the :ref:`label-meta-attributes` and some :ref:`label-drawer-attributes`
+    such as :ref:`label-reorderable-list`, :ref:`label-button`, :ref:`label-show-non-serialized-field` and :ref:`label-show-native-property`.    
     If you want all of the attributes to work in your custom editors, however,
     you must inherit from ``NaughtyInspector`` and use the ``NaughtyEditorGUI.PropertyField_Layout`` function instead of ``EditorGUILayout.PropertyField``.
 

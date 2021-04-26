@@ -1,3 +1,5 @@
+.. _label-button:
+
 Button
 ======
 A method can be marked as a button. A button appears in the inspector and executes the method if clicked.
