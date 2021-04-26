@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MinValue / MaxValue &mdash; NaughtyAttributes 2.0.5 documentation</title>
+  <title>MinValue / MaxValue &mdash; NaughtyAttributes 2.0.9 documentation</title>
   
 
   
@@ -96,9 +96,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/horizontal_line.html">HorizontalLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/info_box.html">InfoBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/input_axis.html">InputAxis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/layer.html">Layer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/min_max_slider.html">MinMaxSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/progress_bar.html">ProgressBar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/reorderable_list.html">ReorderableList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/resizable_text_area.html">ResizableTextArea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/scene.html">Scene</a></li>
@@ -114,6 +114,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/foldout.html">Foldout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/label.html">Label</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/on_value_changed.html">OnValueChanged</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meta_attributes/read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/show_hide_if.html">ShowIf / HideIf</a></li>
 </ul>
 </li>
@@ -195,7 +196,8 @@
             
   <div class="section" id="minvalue-maxvalue">
 <h1>MinValue / MaxValue<a class="headerlink" href="#minvalue-maxvalue" title="Permalink to this headline">¶</a></h1>
-<p>Clamps integer and float fields.</p>
+<p>Can be used to limit the range of variables.
+Can be applied to <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector2</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector3</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector4</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector2Int</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector3Int</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you want to use it on fields that are nested inside serialized structs or classes

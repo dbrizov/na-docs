@@ -1,6 +1,12 @@
 ReadOnly
 ========
-Makes a serialized field readonly::
+Make a serialized field readonly
+
+.. note::
+    If you want to use it on fields that are nested inside serialized structs or classes
+    you need to use the :ref:`label-allow-nesting` attribute.
+
+::
 
     public class NaughtyComponent : MonoBehaviour
     {

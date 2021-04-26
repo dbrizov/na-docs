@@ -31,7 +31,7 @@ The condition can be a ``field``, ``property`` or ``function``.
 
 .. image:: ../../images/EnableIf_Inspector.gif
 
-You can also have more than one condition::
+You can have more than one condition::
 
     public class NaughtyComponent : MonoBehaviour
     {
@@ -43,4 +43,21 @@ You can also have more than one condition::
 
         [EnableIf(EConditionOperator.Or, "flag0", "flag1")]
         public int enabledIfAny;
+    }
+
+An enum value can also be used as a condition::
+
+    public class NaughtyComponent : MonoBehaviour
+    {
+        public EMyEnum enumFlag;
+
+        [EnableIf("enumFlag", EMyEnum.Case0)]
+        public int enableIfEnum; // Will be enabled only if enumFlag == EMyEnum.Case0
+    }
+
+    public enum EMyEnum
+    {
+        Case0,
+        Case1,
+        Case2
     }

@@ -13,4 +13,5 @@ Give fields or methods meta data. A field or method can have more than one meta 
     foldout
     label
     on_value_changed
+    read_only
     show_hide_if

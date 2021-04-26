@@ -21,9 +21,9 @@ They can be applied to serialized, and non-serialized fields, native C# properti
     horizontal_line
     info_box
     input_axis
+    layer
     min_max_slider
     progress_bar
-    read_only
     reorderable_list
     resizable_text_area
     scene

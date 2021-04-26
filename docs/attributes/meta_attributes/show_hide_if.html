@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ShowIf / HideIf &mdash; NaughtyAttributes 2.0.5 documentation</title>
+  <title>ShowIf / HideIf &mdash; NaughtyAttributes 2.0.9 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Validator Attributes" href="../validator_attributes/index.html" />
-    <link rel="prev" title="OnValueChanged" href="on_value_changed.html" /> 
+    <link rel="prev" title="ReadOnly" href="read_only.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -96,9 +96,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/horizontal_line.html">HorizontalLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/info_box.html">InfoBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/input_axis.html">InputAxis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/layer.html">Layer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/min_max_slider.html">MinMaxSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/progress_bar.html">ProgressBar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/reorderable_list.html">ReorderableList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/resizable_text_area.html">ResizableTextArea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../drawer_attributes/scene.html">Scene</a></li>
@@ -114,6 +114,7 @@
 <li class="toctree-l2"><a class="reference internal" href="foldout.html">Foldout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="label.html">Label</a></li>
 <li class="toctree-l2"><a class="reference internal" href="on_value_changed.html">OnValueChanged</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read_only.html">ReadOnly</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">ShowIf / HideIf</a></li>
 </ul>
 </li>
@@ -236,6 +237,23 @@ you need to use the <a class="reference internal" href="../special_attributes/al
 <span class="p">}</span>
 </pre></div>
 </div>
+<p>An enum value can also be used as a condition:</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">EMyEnum</span> <span class="n">enumFlag</span><span class="p">;</span>
+
+<span class="na">    [ShowIf(&quot;enumFlag&quot;, EMyEnum.Case0)]</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">enableIfEnum</span><span class="p">;</span> <span class="c1">// Will be shown only if enumFlag == EMyEnum.Case0</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">enum</span> <span class="n">EMyEnum</span>
+<span class="p">{</span>
+    <span class="n">Case0</span><span class="p">,</span>
+    <span class="n">Case1</span><span class="p">,</span>
+    <span class="n">Case2</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 
 
@@ -249,7 +267,7 @@ you need to use the <a class="reference internal" href="../special_attributes/al
         <a href="../validator_attributes/index.html" class="btn btn-neutral float-right" title="Validator Attributes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="on_value_changed.html" class="btn btn-neutral float-left" title="OnValueChanged" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="read_only.html" class="btn btn-neutral float-left" title="ReadOnly" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

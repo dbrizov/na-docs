@@ -2,7 +2,8 @@
 
 MinMaxSlider
 ============
-A double slider. The **min value** is saved to the **X** property, and the **max value** is saved to the **Y** property of a **Vector2** field::
+A double slider.
+The **min value** is saved to the ``x`` property, and the **max value** is saved to the ``y`` property of a ``Vector2`` or a ``Vector2Int`` field::
 
     public class NaughtyComponent : MonoBehaviour
     {

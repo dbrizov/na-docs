@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ProgressBar &mdash; NaughtyAttributes 2.0.5 documentation</title>
+  <title>ProgressBar &mdash; NaughtyAttributes 2.0.9 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ReadOnly" href="read_only.html" />
+    <link rel="next" title="ReorderableList" href="reorderable_list.html" />
     <link rel="prev" title="MinMaxSlider" href="min_max_slider.html" /> 
 </head>
 
@@ -96,9 +96,9 @@
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="info_box.html">InfoBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="input_axis.html">InputAxis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer.html">Layer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="min_max_slider.html">MinMaxSlider</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">ProgressBar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reorderable_list.html">ReorderableList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="resizable_text_area.html">ResizableTextArea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene.html">Scene</a></li>
@@ -114,6 +114,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/foldout.html">Foldout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/label.html">Label</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/on_value_changed.html">OnValueChanged</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meta_attributes/read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/show_hide_if.html">ShowIf / HideIf</a></li>
 </ul>
 </li>
@@ -195,7 +196,7 @@
             
   <div class="section" id="progressbar">
 <h1>ProgressBar<a class="headerlink" href="#progressbar" title="Permalink to this headline">¶</a></h1>
-<p>Draws a progress bar:</p>
+<p>Draws a progress bar. Can be applied to an <code class="docutils literal notranslate"><span class="pre">int</span></code> or a <code class="docutils literal notranslate"><span class="pre">float</span></code>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
 <span class="na">    [ProgressBar(&quot;Health&quot;, 300, EColor.Red)]</span>
@@ -222,7 +223,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="read_only.html" class="btn btn-neutral float-right" title="ReadOnly" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="reorderable_list.html" class="btn btn-neutral float-right" title="ReorderableList" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="min_max_slider.html" class="btn btn-neutral float-left" title="MinMaxSlider" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

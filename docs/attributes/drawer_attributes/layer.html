@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ReadOnly &mdash; NaughtyAttributes 2.0.5 documentation</title>
+  <title>Layer &mdash; NaughtyAttributes 2.0.9 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ReorderableList" href="reorderable_list.html" />
-    <link rel="prev" title="ProgressBar" href="progress_bar.html" /> 
+    <link rel="next" title="MinMaxSlider" href="min_max_slider.html" />
+    <link rel="prev" title="InputAxis" href="input_axis.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -96,9 +96,9 @@
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="info_box.html">InfoBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="input_axis.html">InputAxis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Layer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="min_max_slider.html">MinMaxSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="progress_bar.html">ProgressBar</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reorderable_list.html">ReorderableList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="resizable_text_area.html">ResizableTextArea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene.html">Scene</a></li>
@@ -114,6 +114,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/foldout.html">Foldout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/label.html">Label</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/on_value_changed.html">OnValueChanged</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meta_attributes/read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/show_hide_if.html">ShowIf / HideIf</a></li>
 </ul>
 </li>
@@ -174,13 +175,13 @@
         
           <li><a href="index.html">Drawer Attributes</a> &raquo;</li>
         
-      <li>ReadOnly</li>
+      <li>Layer</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/attributes/drawer_attributes/read_only.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/attributes/drawer_attributes/layer.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -193,17 +194,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="readonly">
-<h1>ReadOnly<a class="headerlink" href="#readonly" title="Permalink to this headline">¶</a></h1>
-<p>Makes a serialized field readonly:</p>
+  <div class="section" id="layer">
+<h1>Layer<a class="headerlink" href="#layer" title="Permalink to this headline">¶</a></h1>
+<p>Select a layer via dropdown interface:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-<span class="na">    [ReadOnly]</span>
-    <span class="k">public</span> <span class="n">Vector3</span> <span class="n">forwardVector</span> <span class="p">=</span> <span class="n">Vector3</span><span class="p">.</span><span class="n">forward</span><span class="p">;</span>
+<span class="na">    [Layer]</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">layerName</span><span class="p">;</span>
+
+<span class="na">    [Layer]</span>
+    <span class="k">public</span> <span class="kt">int</span> <span class="n">layerIndex</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<img alt="../../_images/ReadOnly_Inspector.png" src="../../_images/ReadOnly_Inspector.png" />
+<img alt="../../_images/Layer_Inspector.png" src="../../_images/Layer_Inspector.png" />
 </div>
 
 
@@ -214,10 +218,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="reorderable_list.html" class="btn btn-neutral float-right" title="ReorderableList" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="min_max_slider.html" class="btn btn-neutral float-right" title="MinMaxSlider" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="progress_bar.html" class="btn btn-neutral float-left" title="ProgressBar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="input_axis.html" class="btn btn-neutral float-left" title="InputAxis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

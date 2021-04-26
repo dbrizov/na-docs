@@ -1,7 +1,7 @@
 Installation
 ============
 .. note::
-    NaughtyAttributes requires **Unity 2018.3.0** or later versions. Don't forget to include the ``NaughtyAttributes`` namespace.
+    NaughtyAttributes requires **Unity 2018.4.0** or later versions. Don't forget to include the ``NaughtyAttributes`` namespace.
 
 1. The package is available on the `openupm registry <https://openupm.com>`_. You can install it via `openupm-cli <https://github.com/openupm/openupm-cli>`_::
 

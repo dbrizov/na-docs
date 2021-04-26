@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ShowNativeProperty &mdash; NaughtyAttributes 2.0.5 documentation</title>
+  <title>ShowNativeProperty &mdash; NaughtyAttributes 2.0.9 documentation</title>
   
 
   
@@ -96,9 +96,9 @@
 <li class="toctree-l2"><a class="reference internal" href="horizontal_line.html">HorizontalLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="info_box.html">InfoBox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="input_axis.html">InputAxis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="layer.html">Layer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="min_max_slider.html">MinMaxSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="progress_bar.html">ProgressBar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reorderable_list.html">ReorderableList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="resizable_text_area.html">ResizableTextArea</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scene.html">Scene</a></li>
@@ -114,6 +114,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/foldout.html">Foldout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/label.html">Label</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/on_value_changed.html">OnValueChanged</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meta_attributes/read_only.html">ReadOnly</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../meta_attributes/show_hide_if.html">ShowIf / HideIf</a></li>
 </ul>
 </li>
@@ -196,8 +197,8 @@
   <div class="section" id="shownativeproperty">
 <h1>ShowNativeProperty<a class="headerlink" href="#shownativeproperty" title="Permalink to this headline">¶</a></h1>
 <p>Shows native C# properties in the inspector.
-It supports only certain types <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">long</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Vector2</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector3</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector4</span></code>, <code class="docutils literal notranslate"><span class="pre">Color</span></code>, <code class="docutils literal notranslate"><span class="pre">Bounds</span></code>, <code class="docutils literal notranslate"><span class="pre">Rect</span></code>, <code class="docutils literal notranslate"><span class="pre">UnityEngine.Object</span></code>.</p>
+It supports only certain types <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">short</span></code>, <code class="docutils literal notranslate"><span class="pre">ushort</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">uint</span></code>, <code class="docutils literal notranslate"><span class="pre">long</span></code>, <code class="docutils literal notranslate"><span class="pre">ulong</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Vector2</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector3</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector4</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector2Int</span></code>, <code class="docutils literal notranslate"><span class="pre">Vector3Int</span></code>, <code class="docutils literal notranslate"><span class="pre">Color</span></code>, <code class="docutils literal notranslate"><span class="pre">Bounds</span></code>, <code class="docutils literal notranslate"><span class="pre">Rect</span></code>, <code class="docutils literal notranslate"><span class="pre">RectInt</span></code>, <code class="docutils literal notranslate"><span class="pre">UnityEngine.Object</span></code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Doesn’t work on properties that are nested inside serialized structs of classes.</p>

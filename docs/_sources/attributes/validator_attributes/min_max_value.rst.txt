@@ -1,6 +1,7 @@
 MinValue / MaxValue
 ===================
-Clamps integer and float fields.
+Can be used to limit the range of variables.
+Can be applied to ``int``, ``float``, ``Vector2``, ``Vector3``, ``Vector4``, ``Vector2Int``, ``Vector3Int``.
 
 .. note::
     If you want to use it on fields that are nested inside serialized structs or classes

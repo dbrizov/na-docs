@@ -1,6 +1,6 @@
 ProgressBar
 ===========
-Draws a progress bar::
+Draws a progress bar. Can be applied to an ``int`` or a ``float``::
 
     public class NaughtyComponent : MonoBehaviour
     {

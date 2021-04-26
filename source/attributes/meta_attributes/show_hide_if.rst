@@ -42,3 +42,20 @@ You can have more than one condition::
         [ShowIf(EConditionOperator.Or, "flag0", "flag1")]
         public int showIfAny;
     }
+
+An enum value can also be used as a condition::
+
+    public class NaughtyComponent : MonoBehaviour
+    {
+        public EMyEnum enumFlag;
+
+        [ShowIf("enumFlag", EMyEnum.Case0)]
+        public int enableIfEnum; // Will be shown only if enumFlag == EMyEnum.Case0
+    }
+
+    public enum EMyEnum
+    {
+        Case0,
+        Case1,
+        Case2
+    }
