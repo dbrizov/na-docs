@@ -198,13 +198,13 @@
 <p>By default <a class="reference internal" href="../drawer_attributes/index.html#label-drawer-attributes"><span class="std std-ref">Drawer Attributes</span></a> can be nested inside structs and classes.
 <a class="reference internal" href="../meta_attributes/index.html#label-meta-attributes"><span class="std std-ref">Meta Attributes</span></a> and <a class="reference internal" href="../validator_attributes/index.html#label-validator-attributes"><span class="std std-ref">Validator Attributes</span></a>  however are not drawers and don’t support nesting out of the box.
 If you want to use <a class="reference internal" href="../meta_attributes/enable_disable_if.html#label-enable-disable-if"><span class="std std-ref">EnableIf / DisableIf</span></a> attributes inside structs for instance, you have to use the <code class="docutils literal notranslate"><span class="pre">AllowNesting</span></code> attribute like so:</p>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">EnableIfTest</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">NaughtyComponent</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="n">EnableIfNest</span> <span class="n">nest</span><span class="p">;</span>
+    <span class="k">public</span> <span class="n">MyStruct</span> <span class="n">myStruct</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="na">[System.Serializable]</span>
-<span class="k">public</span> <span class="k">struct</span> <span class="nc">EnableIfNest</span>
+<span class="k">public</span> <span class="k">struct</span> <span class="nc">MyStruct</span>
 <span class="p">{</span>
     <span class="k">public</span> <span class="kt">bool</span> <span class="n">enableFlag</span><span class="p">;</span>
 

@@ -7,13 +7,13 @@ By default :ref:`label-drawer-attributes` can be nested inside structs and class
 :ref:`label-meta-attributes` and :ref:`label-validator-attributes`  however are not drawers and don't support nesting out of the box.
 If you want to use :ref:`label-enable-disable-if` attributes inside structs for instance, you have to use the ``AllowNesting`` attribute like so::
 
-    public class EnableIfTest : MonoBehaviour
+    public class NaughtyComponent : MonoBehaviour
     {
-        public EnableIfNest nest;
+        public MyStruct myStruct;
     }
 
     [System.Serializable]
-    public struct EnableIfNest
+    public struct MyStruct
     {
         public bool enableFlag;
 
