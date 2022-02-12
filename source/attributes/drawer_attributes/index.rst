@@ -30,4 +30,5 @@ They can be applied to serialized, and non-serialized fields, native C# properti
     show_asset_preview
     show_native_property
     show_non_serialized_field
+    sorting_layer
     tag

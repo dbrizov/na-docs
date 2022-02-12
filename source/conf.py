@@ -17,7 +17,7 @@ copyright = '2017, Denis Rizov'
 author = 'Denis Rizov'
 
 # The full version, including alpha/beta/rc tags
-release = '2.0.9'
+release = '2.1.4'
 
 # -- General configuration ---------------------------------------------------
 
