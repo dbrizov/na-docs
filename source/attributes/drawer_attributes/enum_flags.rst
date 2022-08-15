@@ -1,6 +1,6 @@
 EnumFlags
 =========
-Privides a dropdown interface for setting enum flags::
+Provides a dropdown interface for setting enum flags::
 
     public enum Direction
     {
