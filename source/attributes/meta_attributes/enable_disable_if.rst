@@ -61,3 +61,23 @@ An enum value can also be used as a condition::
         Case1,
         Case2
     }
+
+Instead of typing the name of a condition, you can also use a ``nameof`` expression, applying ``EnableIf`` or ``DisableIf`` in a type-safe manner::
+
+    public class NaughtyComponent : MonoBehaviour
+    {
+        public bool enableMyInt;
+
+        [EnableIf(nameof(enableMyInt))]
+        public int myInt;
+
+        [EnableIf(nameof(Enabled))]
+        public float myFloat;
+
+        [EnableIf(nameof(NotEnabled))]
+        public Vector3 myVector;
+
+        public bool Enabled() { return true; }
+
+        public bool NotEnabled => false;
+    }
