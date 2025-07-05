@@ -12,7 +12,7 @@ If you want a runtime event, you should probably use an event/delegate and subsc
 
     public class NaughtyComponent : MonoBehaviour
     {
-        [OnValueChanged("OnValueChangedCallback")]
+        [OnValueChanged(nameof(OnValueChangedCallback))]
         public int myInt;
 
         private void OnValueChangedCallback()

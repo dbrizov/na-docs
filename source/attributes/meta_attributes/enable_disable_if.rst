@@ -15,13 +15,13 @@ The condition can be a ``field``, ``property`` or ``function``.
     {
         public bool enableMyInt;
 
-        [EnableIf("enableMyInt")]
+        [EnableIf(nameof(enableMyInt))]
         public int myInt;
 
-        [EnableIf("Enabled")]
+        [EnableIf(nameof(Enabled))]
         public float myFloat;
 
-        [EnableIf("NotEnabled")]
+        [EnableIf(nameof(NotEnabled))]
         public Vector3 myVector;
 
         public bool Enabled() { return true; }
@@ -38,10 +38,10 @@ You can have more than one condition::
         public bool flag0;
         public bool flag1;
 
-        [EnableIf(EConditionOperator.And, "flag0", "flag1")]
+        [EnableIf(EConditionOperator.And, nameof(flag0), nameof(flag1))]
         public int enabledIfAll;
 
-        [EnableIf(EConditionOperator.Or, "flag0", "flag1")]
+        [EnableIf(EConditionOperator.Or, nameof(flag0), nameof(flag1))]
         public int enabledIfAny;
     }
 
@@ -51,7 +51,7 @@ An enum value can also be used as a condition::
     {
         public EMyEnum enumFlag;
 
-        [EnableIf("enumFlag", EMyEnum.Case0)]
+        [EnableIf(nameof(enumFlag), EMyEnum.Case0)]
         public int enableIfEnum; // Will be enabled only if enumFlag == EMyEnum.Case0
     }
 
