@@ -17,7 +17,7 @@ copyright = '2017, Denis Rizov'
 author = 'Denis Rizov'
 
 # The full version, including alpha/beta/rc tags
-release = '2.1.4'
+release = '2.1.5'
 
 # -- General configuration ---------------------------------------------------
 
@@ -40,7 +40,7 @@ exclude_patterns = []
 # Theme
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-    'collapse_navigation': False,  # Collapse navigation (False makes it tree-like)
+    "collapse_navigation": False,  # Collapse navigation (False makes it tree-like)
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
