@@ -2,7 +2,7 @@ RequiredType
 ============
 Used on game objects or components.
 When used on a game object, it checks if the game object has a component of the required type.
-When used on a component, it checks if the component inherits the required type or if the game object it is attached to has a component of that type.
+When used on a component, it checks if the game object it is attached to has a component of the required type.
 
 .. note::
     If you want to use it on fields that are nested inside serialized structs or classes
