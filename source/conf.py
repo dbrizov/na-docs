@@ -9,17 +9,24 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 import sphinx_rtd_theme
+from datetime import datetime
 
 # -- Project information -----------------------------------------------------
 
-project = 'NaughtyAttributes'
-copyright = '2017, Denis Rizov'
-author = 'Denis Rizov'
+
+def get_current_year():
+    return datetime.now().year
+
+
+project = "NaughtyAttributes"
+copyright = f"2017-{get_current_year()} Denis Rizov"
+author = "Denis Rizov"
 
 # The full version, including alpha/beta/rc tags
-release = '2.1.5'
+release = "2.1.5"
 
 # -- General configuration ---------------------------------------------------
+
 
 # Extensions
 extensions = [
