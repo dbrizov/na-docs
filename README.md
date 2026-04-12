@@ -1,4 +1,4 @@
-# na-docs
+# NaughtyAttributes' Docs
 
 The [Documentation](https://dbrizov.github.io/na-docs/) of [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes)
 
