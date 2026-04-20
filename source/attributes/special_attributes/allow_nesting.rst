@@ -17,7 +17,7 @@ If you want to use :ref:`label-enable-disable-if` attributes inside structs for 
     {
         public bool enableFlag;
 
-        [EnableIf("enableFlag")]
+        [EnableIf(nameof(enableFlag))]
         [AllowNesting] // Because it's nested we need to explicitly allow nesting
         public int integer;
     }

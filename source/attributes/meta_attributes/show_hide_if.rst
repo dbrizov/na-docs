@@ -13,13 +13,13 @@ The condition can be a ``field``, ``property`` or ``function``.
     {
         public bool showInt;
 
-        [ShowIf("showInt")]
+        [ShowIf(nameof(showInt))]
         public int myInt;
 
-        [ShowIf("AlwaysShow")]
+        [ShowIf(nameof(AlwaysShow))]
         public float myFloat;
 
-        [ShowIf("NeverShow")]
+        [ShowIf(nameof(NeverShow))]
         public Vector3 myVector;
 
         public bool AlwaysShow() { return true; }
@@ -36,10 +36,10 @@ You can have more than one condition::
         public bool flag0;
         public bool flag1;
 
-        [ShowIf(EConditionOperator.And, "flag0", "flag1")]
+        [ShowIf(EConditionOperator.And, nameof(flag0), nameof(flag1))]
         public int showIfAll;
 
-        [ShowIf(EConditionOperator.Or, "flag0", "flag1")]
+        [ShowIf(EConditionOperator.Or, nameof(flag0), nameof(flag1))]
         public int showIfAny;
     }
 
@@ -49,7 +49,7 @@ An enum value can also be used as a condition::
     {
         public EMyEnum enumFlag;
 
-        [ShowIf("enumFlag", EMyEnum.Case0)]
+        [ShowIf(nameof(enumFlag), EMyEnum.Case0)]
         public int enableIfEnum; // Will be shown only if enumFlag == EMyEnum.Case0
     }
 

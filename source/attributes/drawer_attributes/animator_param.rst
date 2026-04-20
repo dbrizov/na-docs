@@ -6,10 +6,10 @@ Select an Animator paramater via dropdown interface::
     {
         public Animator someAnimator;
 
-        [AnimatorParam("someAnimator")]
+        [AnimatorParam(nameof(someAnimator))]
         public int paramHash;
 
-        [AnimatorParam("someAnimator")]
+        [AnimatorParam(nameof(someAnimator))]
         public string paramName;
     }
 
