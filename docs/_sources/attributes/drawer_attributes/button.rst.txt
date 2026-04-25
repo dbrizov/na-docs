@@ -6,7 +6,7 @@ A method can be marked as a button. A button appears in the inspector and execut
 Works both with instance and static methods.
 
 .. warning::
-    Doesn't work on methods that are nested inside serialized structs of classes.
+    Doesn't work on methods that are nested inside serialized structs or classes.
 
 ::
 
